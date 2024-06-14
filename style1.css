@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.image-container999{
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* margin-left: 140px;
+    margin-right: 140px; */
+    margin: 50px;
+}
+.picture-box999 img{
+    height: 400px;
+    width: 500px;
+    overflow: hidden;
+    border-radius: 8%;
+}
+.picture-box999{
+    margin-left: auto;
+    margin-right: auto;
+}

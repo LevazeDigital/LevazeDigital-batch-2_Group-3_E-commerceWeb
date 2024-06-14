@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <title>About Us - BookHub</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.bookhub-header {
+    background: linear-gradient(to right, #3498db, #2980b9);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.bookhub-header h1 {
+    color: white;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 0;
+}
+
+main {
+    padding: 40px 0;
+}
+
+.bookhub-section {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bookhub-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.bookhub-content {
+  flex: 1;
+  max-width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.bookhub-content h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.bookhub-content p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+}
+
+.bookhub-image {
+  flex: 1;
+  max-width: 50%;
+  text-align: center;
+  position: relative;
+  padding: 20px;
+}
+
+.bookhub-image img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bookhub-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .bookhub-content, .bookhub-image {
+      max-width: 100%;
+      text-align: center;
+      padding: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .bookhub-header h1 {
+      font-size: 2em;
+  }
+
+  .bookhub-content h2 {
+      font-size: 1.5em;
+  }
+
+  .bookhub-content p {
+      font-size: 1em;
+  }
+}
+.bookhub-team-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.bookhub-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    max-width: 30%;
+    flex: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bookhub-card img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.bookhub-card h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.bookhub-card p {
+    font-size: 1em;
+    color: #666;
+}
+
+.bookhub-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .bookhub-content p {
+        font-size: 1em;
+    }
+
+    .bookhub-team-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bookhub-card {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 500px) {
+    .bookhub-header h1 {
+        font-size: 2em;
+    }
+
+    .bookhub-content h2 {
+        font-size: 1.5em;
+    }
+
+    .bookhub-content p {
+        font-size: 0.9em;
+    }
+
+    .bookhub-card {
+        max-width: 100%;
+    }
+}
+    </style>
+</head>
+<body>
+    <header class="bookhub-header">
+        <h1>About Us</h1>
+    </header>
+    <main>
+        <section class="bookhub-section bookhub-story-section">
+            <div class="bookhub-container">
+                <div class="bookhub-content">
+                    <h2>Our Story</h2>
+                    <p>At BookHub, we’re on a mission to connect people with great books. Our journey began with a simple idea: to create a platform where readers can explore, discover, and share their love for literature. We started as a small group of book enthusiasts who wanted to create a community where readers could find recommendations, discuss their favorite books, and connect with authors. Over the years, BookHub has grown into a thriving community of book lovers, authors, and publishers from around the world. Our passion for books drives everything we do, and we’re committed to making BookHub the best place for readers to discover and enjoy great literature.</p>
+                </div>
+                <div class="bookhub-image">
+                    <img src="about-us1.jpg" alt="Our Story">
+                </div>
+            </div>
+        </section>
+        <section class="bookhub-section bookhub-mission-section">
+            <div class="bookhub-container">
+                <div class="bookhub-image">
+                    <img src="about-us2.jpg" alt="Our Mission">
+                </div>
+                <div class="bookhub-content">
+                    <h2>Our Mission</h2>
+                    <p>Our mission is to make reading more accessible and enjoyable for everyone. We believe that books have the power to inspire, educate, and entertain, and we’re dedicated to helping readers find their next great read. Whether you’re looking for the latest bestseller, a classic novel, or a hidden gem, BookHub is here to help you find it. We work with publishers, authors, and bookstores to bring you the best selection of books, and our community of readers is always sharing new recommendations and reviews. At BookHub, we’re passionate about books, and we want to share that passion with you.</p>
+                </div>
+            </div>
+        </section>
+        <section class="bookhub-section bookhub-team-section">
+            <div class="bookhub-container">
+                <div class="bookhub-content">
+                    <h2>Meet Our Team</h2>
+                    <p>Our team is made up of passionate book lovers who are committed to building a vibrant literary community. From our founders to our dedicated staff, we’re united by our love for books and our desire to make BookHub the best it can be.</p>
+                </div>
+                <div class="bookhub-team-cards">
+                    <div class="bookhub-card">
+                        <img src="user-male.jpeg" alt="Team Member 1">
+                        <h3>Shubham Gupta</h3>
+                        <h4>Intern 1</h4>
+                        <p>Shubham is the visionary behind BookHub. With a passion for literature and a background in publishing, he leads our team with a commitment to making reading accessible to everyone.</p>
+                    </div>
+                    <div class="bookhub-card">
+                        <img src="user-female1.png" alt="Team Member 2">
+                        <h3>Samita Madav</h3>
+                        <h4>Intern 2</h4>
+                        <p>Samita oversees the daily operations at BookHub. Her extensive experience in management and logistics ensures that everything runs smoothly, from book deliveries to customer service.</p>
+                    </div>
+                    <div class="bookhub-card">
+                        <img src="user-female.png" alt="Team Member 3">
+                        <h3>Khushbu Singh</h3>
+                        <h4>HR</h4>
+                        <p>Khushbu is the creative force behind our marketing campaigns. With her innovative strategies and love for books, she helps spread the word about BookHub to readers everywhere.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

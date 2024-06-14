@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="cards-section.css">
+    <link rel="stylesheet" href="image-slider.css">
+    <link rel="stylesheet" href="back-to-school.css">
+	<link rel="stylesheet" href="chat.css">
+    <link rel="stylesheet" href="view-more-btn.css">
+    <link rel="stylesheet" href="catogries-card.css">
+    <link rel="stylesheet" href="testimonial.css">
+	<link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+	<title>NavBar</title>
+   
+</head>
+<body style="background-color: rgb(217, 228, 212);">
+<header>
+	<nav>
+		<!--navbar1 desktop view-->
+		<div class="navbar1">
+			<div class="navitem">
+				<div class="logo1">
+					<a href="integrated.html" class="logo"><i class="fa-solid fa-book"></i><i> </i>bookHub</a>
+				</div>
+			</div>
+			<div class="navitem">
+				<div class="searchbarr searchchmob">
+                    <form method="get">
+                        <input type="text" name="mainsearch" placeholder="search.." class="bi bi-search" />
+                        <span type="submit"><i class="bi bi-search"></i></span>
+                    </form>
+                </div>
+			</div>
+			<div class="navitem">
+				<div class="iconss">
+					<a href="#"><i class="fas fa-heart" ></i></a>
+                    <a href="login-page.html"><i class="bi bi-person-fill" ></i></a>
+                    <a href=""><i class="bi bi-cart-fill cart"></i></a>
+                    <i class="bi bi-list navmenu" style="color: white;"></i>
+                </div>
+			</div>
+		</div>
+		<!--navbar2 mobile view-->
+		<div class="navbar2 mobileview">
+			<div class="searchchmob">
+            <form method="get">
+                <input type="text" name="mainsearch" placeholder="search.." class="bi bi-search" />
+                <span type="submit"><i class="bi bi-search"></i></span>
+            </form>
+           </div>
+		</div>
+		<!--menubar hide and show-->
+		<div class="menubarlistt">
+        <ul>
+            <li><a href="integrated.html"><i class="bi bi-house-fill"></i> Home</a></li>
+            <li><a href="login-page.html"><i class="bi bi-person-fill"></i> My Account</a></li>
+            <li><a href=""><i class="bi bi-cart-fill"></i> My Order</a></li>
+            <li><a href="contact-us.html"><i class="bi bi-telephone-fill"></i> Contack us</a></li>
+            <li><a href=""><i class="bi bi-currency-rupee"></i> Become Seller</a></li>
+        </ul>
+    </div>
+	</nav>
+</header>
+
+<!-- slides section starts from here -->
+
+<div class="owl-carousel owl-theme">
+    <div class="item"><a href="all-image.html"><img src="slide1.png" alt="Image 1"></a></div>
+    <div class="item"><a href="all-image.html"><img src="slide2.png" alt="Image 2"></a></div>
+    <div class="item"><a href="all-image.html"><img src="slide3.png" alt="Image 3"></a></div>
+    <!-- Add more items as needed -->
+</div>
+
+<!-- Link to jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Link to Owl Carousel JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<!-- Link to your custom JavaScript file -->
+<script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:0,
+                nav:true,
+                autoplay:true,
+                autoplayTimeout:6000,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    2368:{
+                        items:1
+                    },
+                    5492:{
+                        items:1
+                    }
+                }
+            });
+        });
+</script>
+<!-- slides section ends here -->
+
+
+<!-- books cards section starts from b=here -->
+
+
+
+<div class="container333">
+    <h1>New Arrivals</h1>
+    <div class="slider333">
+        <div class="slide333">
+            <a href="2nd-page.html"><img src="g1.jpg" alt="Product 1"></a>
+        
+            <div class="slide-content333">
+                <h2>God of ruin</h2>
+                <p>Rina kent</p>
+                <h3>Rs.199</h3>
+                <button class="buy-btn333">Add to cart</button>
+                <button class="buy-btn333">Buy now</button>
+            </div>
+        </div>
+        <div class="slide333">
+            <img src="i2.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>Shadow of the wind</h2>
+                <p>Carlos Ruiz Zafón</p>
+                <h3>Rs.199</h3>
+                <button class="buy-btn333">Add to cart</button>
+                <button class="buy-btn333">Buy now</button>
+            </div>
+        </div>
+        <div class="slide333">
+            <img src="i3.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>Black knight</h2>
+                <p>Rina kent</p>
+                <h3>Rs.199</h3>
+                <button class="buy-btn333">Add to cart</button>
+                <button class="buy-btn333">Buy now</button>
+            </div>
+        </div>
+        <div class="slide333">
+            <img src="i4.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>The silent patient</h2>
+                <p>Alex Michaelides</p>
+                <h3>Rs.199</h3>
+                <button class="buy-btn333">Add to cart</button>
+                <button class="buy-btn333">Buy now</button>
+            </div>
+        </div>
+        <div class="slide333">
+            <img src="i5.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>A song of ice and fire</h2>
+                <p>George R.R. Martin</p>
+                <h3>Rs.199</h3>
+                <button class="buy-btn333">Add to cart</button>
+                <button class="buy-btn333">Buy now</button>
+            </div>
+        </div>
+        <div class="slide333">
+            <img src="i6.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>The last house on needless</h2>
+                <p>Catriona Ward</p>
+                <h3>Rs.199</h3>
+                <button class="buy-btn333">Add to cart</button>
+                <button class="buy-btn333">Buy now</button>
+            </div>
+        </div>
+
+        <div class="slide333">
+            <img src="i7.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>Psycho</h2>
+                <p> Robert Bloch</p>
+                <h3>Rs.199</h3>
+                <button class="buy-btn333">Add to cart</button>
+                <button class="buy-btn333">Buy now</button>
+            </div>
+        </div>
+
+        <div class="slide333">
+            <img src="i8.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>A dance with dragon</h2>
+                <p>George R.R. Martin</p>
+                <h3>Rs.199</h3>
+                <button class="buy-btn333">Add to cart</button>
+                <button class="buy-btn333">Buy now</button>
+            </div>
+        </div>
+
+        <div class="slide333">
+            <img src="i9.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>The dare</h2>
+                <p>Elle Kennedy </p>
+                <h3>Rs.199</h3>
+                <button class="buy-btn333">Add to cart</button>
+                <button class="buy-btn333">Buy now</button>
+            </div>
+        </div>
+
+        <div class="slide333">
+            <img src="i10.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>A game of throne</h2>
+                <p>George R.R. Martin</p>
+                <h3>Rs.199</h3>
+                <button class="buy-btn333">Add to cart</button>
+                <button class="buy-btn333">Buy now</button>
+            </div>
+        </div>
+
+        <div class="slide333">
+            <img src="i11.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>A night of scream</h2>
+                <p>Richard Z. Santos
+                </p>
+                <h3>Rs.199</h3>
+                <button class="buy-btn333">Add to cart</button>
+                <button class="buy-btn333">Buy now</button>
+            </div>
+        </div>
+
+        <div class="slide333">
+            <img src="i12.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>Tempted by deception</h2>
+                <p>Rina kent</p>
+                <h3>Rs.199</h3>
+                <button class="buy-btn333">Add to cart</button>
+                <button class="buy-btn333">Buy now</button>
+            </div>
+        </div>
+
+        <div class="slide333">
+            <img src="i13.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>Litany</h2>
+                <p>Gene Wolfe</p>
+                <h3>Rs.199</h3>
+                <button class="buy-btn333">Add to cart</button>
+                <button class="buy-btn333">Buy now</button>
+            </div>
+        </div>
+
+        <div class="slide333">
+            <img src="i14.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>Night of terror</h2>
+                <p>Andrew Lane</p>
+                <h3>Rs.199</h3>
+                <button class="buy-btn333">Add to cart</button>
+                <button class="buy-btn333">Buy now</button>
+            </div>
+        </div>
+
+        <div class="slide333">
+            <img src="i15.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>The eye of the world</h2>
+                <p> Robert Jordan</p>
+                <h3>Rs.199</h3>
+                <button class="buy-btn333">Add to cart</button>
+                <button class="buy-btn333">Buy now</button>
+            </div>
+        </div>
+
+        <div class="slide333">
+            <img src="i16.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>All the truths</h2>
+                <p>Rina kent</p>
+                <h3>Rs.199</h3>
+                <button class="buy-btn333">Add to cart</button>
+                <button class="buy-btn333">Buy now</button>
+            </div>
+        </div>
+
+        <div class="slide333">
+            <img src="i17.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>The maid</h2>
+                <p> Nita Prose</p>
+                <h3>Rs.199</h3>
+                <button class="buy-btn333">Add to cart</button>
+                <button class="buy-btn333">Buy now</button>
+            </div>
+        </div>
+
+        <div class="slide333">
+            <img src="i18.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>Midnight thrillers</h2>
+                <p> VIKRAM KHAITAN</p>
+                <h3>Rs.199</h3>
+                <button class="buy-btn333">Add to cart</button>
+                <button class="buy-btn333">Buy now</button>
+            </div>
+        </div>
+
+        <div class="slide333">
+            <img src="i19.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>A clash of king</h2>
+                <p>George R.R. Martin</p>
+                <h3>Rs.199</h3>
+                <button class="buy-btn333">Add to cart</button>
+                <button class="buy-btn333">Buy now</button>
+            </div>
+        </div>
+
+
+        <div class="slide333">
+            <img src="i20.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>Ruthless empire</h2>
+                <p>Rina kent</p>
+                <h3>Rs.199</h3>
+                <button class="buy-btn333">Add to cart</button>
+                <button class="buy-btn333">Buy now</button>
+            </div>
+        </div>
+        <!-- Add more slides as needed -->
+    </div>
+    <button class="prev-btn333">&lt;</button>
+    <button class="next-btn333">&gt;</button>
+</div>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+  const slider = document.querySelector('.slider333');
+  const prevBtn = document.querySelector('.prev-btn333');
+  const nextBtn = document.querySelector('.next-btn333');
+
+  nextBtn.addEventListener('click', function() {
+      slider.scrollBy({
+          left: 350, // Adjust the scroll distance as needed
+          behavior: 'smooth'
+      });
+  });
+
+  prevBtn.addEventListener('click', function() {
+      slider.scrollBy({
+          left: -350, // Adjust the scroll distance as needed
+          behavior: 'smooth'
+      });
+  });
+});
+</script>
+
+<!-- back to school section starts from here-- -->
+
+
+<section class="body4444">
+    <div class="container4444">
+        <div class="content4444" style="display: block;">
+            <h1>Back to School</h1>
+            <h2>Special 60% Off<br>for our student community</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+            <div class="buttons4444">
+                <a href="books-for-boys.html" class="learn-more4444">Learn More</a>
+                
+            </div>
+            
+        </div>
+        <div class="image4444">
+            <div class="background-circle4444"></div>
+            <a href="books-for-boys.html"><img src="child-book.jpg" alt="Student"></a>
+
+        </div>
+    </div>
+    </section>
+    <!-- back to school section ends here -->
+
+
+
+<!-- cards section starts rom here  -->
+
+
+
+
+<div class="container333">
+    <h1>Our Products</h1>
+    <div class="slider333">
+        <div class="slide333">
+            <a href=""><img src="i30.jpg" alt="Product 1"></a>
+            <div class="slide-content333">
+                <h2>God of ruin</h2>
+                <p>Rina kent</p>
+                <h3>Rs.220</h3>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+        <div class="slide333">
+            <img src="i22.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>Shadow of the wind</h2>
+                <p>Carlos Ruiz Zafón</p>
+                <h3>Rs.220</h3>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+        <div class="slide333">
+            <img src="i23.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>Black knight</h2>
+                <p>Rina kent</p>
+                <h3>Rs.220</h3>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+        <div class="slide333">
+            <img src="i24.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>The silent patient</h2>
+                <p>Alex Michaelides
+                </p>
+                <h3>Rs.220</h3>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+        <div class="slide333">
+            <img src="i25.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>A song of ice and fire</h2>
+                <p>George R.R. Martin</p>
+                <h3>Rs.220</h3>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+        
+</div>
+
+<div class="containers333">
+    <!-- <h1>Featured Products</h1> -->
+    <div class="slider333">
+        <div class="slide333">
+            <img src="i26.jpg" alt="Product 1">
+            <div class="slide-content333">
+                <h2>God of ruin</h2>
+                <p>Rina kent</p>
+                <h3>Rs.220</h3>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+        <div class="slide333">
+            <img src="i27.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>Shadow of the wind</h2>
+                <p>Carlos Ruiz Zafón</p>
+                <h3>Rs.220</h3>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+        <div class="slide333">
+            <img src="i28.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>Black knight</h2>
+                <p>Rina kent</p>
+                <h3>Rs.220</h3>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+        <div class="slide333">
+            <img src="i29.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>The silent patient</h2>
+                <p>Alex Michaelides
+                </p>
+                <h3>Rs.220</h3>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+        <div class="slide333">
+            <img src="i30.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>A song of ice and fire</h2>
+                <p>George R.R. Martin</p>
+                <h3>Rs.220</h3>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+</div>
+<section class="btnsection4444">
+<a href="all-image.html" class="btn4444">See ALL</a>
+        <!-- <a href="#"><button class="viewall-button333">view all..</button></a>
+        -->
+</section>
+
+
+<!-- cards section ends here-- -->
+
+
+<!--categories cards start content here-->
+
+
+<div class="image-container999" style="background-color:rgb(252, 247, 240);">
+    <div class="category-card999">
+      <a href="all-image.html"><img src="buttonimage1.jpg" alt="New Arrivals"></a>
+      <div class="category-content999">
+        <h2>New Arrivals</h2>
+        <p>All Lit Up</p>
+       
+        <a href="all-image.html" class="btn">SHOP NOW COLLECTION</a>
+      </div>
+    </div>
+    <div class="category-card999">
+      <a href="all-image.html"><img src="buttonimage2.jpg" alt="Hot in Non-Fiction"></a>
+      <div class="category-content999">
+        <h2>Hot in Non-Fiction</h2>
+        <p>All Lit Up</p>
+        
+        <a href="all-image.html" class="btn">SHOP NOW COLLECTION</a>
+      </div>
+    </div>
+    <div class="category-card999">
+      <a href="all-image.html"><img src="buttonimage3.jpg" alt="Bestsellers in Fiction"></a>
+      <div class="category-content999">
+        <h2>Bestsellers in Fiction</h2>
+        <p>All Lit Up</p>
+        
+        <a href="all-image.html" class="btn">SHOP NOW COLLECTION</a>
+      </div>
+    </div>
+    
+  </div>
+<!-- catogries cards ends here -->
+
+
+
+
+<div class="container333">
+    <h1>BEST SELLER</h1>
+    <div class="slider333">
+        <div class="slide333">
+            <img src="i31.jpg" alt="Product 1">
+            <div class="slide-content333">
+                <h2>God of ruin</h2>
+                <p>Rina kent</p>
+                <h3>Rs.249</h3>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+        <div class="slide333">
+            <img src="i32.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>Shadow of the wind</h2>
+                <p>Carlos Ruiz Zafón</p>
+                <h3>Rs.249</h3>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+        <div class="slide333">
+            <img src="i33.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>Black knight</h2>
+                <p>Rina kent</p>
+                <h3>Rs.249</h3>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+        <div class="slide333">
+            <img src="i34.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>The silent patient</h2>
+                <p>Alex Michaelides
+                </p>
+                <h3>Rs.249</h3>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+        <div class="slide333">
+            <img src="i35.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>A song of ice and fire</h2>
+                <p>George R.R. Martin</p>
+                <h3>Rs.249</h3>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+</div>
+        <!-- <a href="#"><button class="viewall-button333">view all..</button></a>
+        -->
+
+
+<!-- section section strts from here-- -->
+
+
+
+
+
+<!-- home delivery section starts form here  -->
+
+
+
+
+
+
+<section class="features-container-main555" style="background-color:  #bde4c8;;">
+    <div class="features-container555">
+        <div class="feature-item555">
+            <a href="guranteed-home-delivery.html"><img src="https://therightbookstoreindia.com/wp-content/uploads/2023/04/images-150x150.jpg" alt="Home Delivery Icon"></a>
+            <h3>Guaranteed Home Delivery</h3>
+            <a href="https://www.google.com/" style="text-decoration: none;"><p>We provide express shipping for 27000+ Indian pin codes</p></a>
+        </div>
+
+        <div class="feature-item555">
+            <img src="https://therightbookstoreindia.com/wp-content/uploads/2021/09/360_F_266259364_xLQQ1evsZQt7oSRbcJW8zH5cHlijjsdW-150x150.jpg" alt="Quality Books Icon">
+            <h3>Premium Quality Books</h3>
+            <p>Get handpicked books at unbelievable rates</p>
+        </div>
+        <div class="feature-item555">
+            <a href="cast-on-delivery.html"><img src="https://therightbookstoreindia.com/wp-content/uploads/2021/09/images-2-100x100.png" alt="COD Icon"></a>
+            <h3>COD Available</h3>
+            <p>Along with UPI/Card/Netbanking/Paylater</p>
+        </div>
+        <div class="feature-item555">
+            <a href="return-replacement.html"><img src="https://therightbookstoreindia.com/wp-content/uploads/2023/04/insurance-claim-document-finance-7731980-150x150.png" alt="Return/Replacement Icon"></a>
+
+            <h3>Return/Replacement Available</h3>
+            <p>WhatsApp customer support to resolve issues at the earliest</p>
+        </div>
+    </div>
+    </section>
+
+    <!-- testimonial section starts form here  -->
+
+    
+    <section class="testimonial-section" style=" background-color: #bde4c8;">
+        <div class="testimonials">
+            <div class="testimonial">
+               <a href="https://www.google.com/"><img src="user-image.png" alt="shubh"></a>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, nobis nisi, pariatur quis quos voluptatibus quaerat illum </p>
+                <h3>Ajay Kannan</h3>
+                <!-- <p class="university">SIES Graduate School Of Technology</p> -->
+            </div>
+            <div class="testimonial">
+                <img src="user-image.png" alt="Shivam Joshi">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, nobis nisi, pariatur quis quos voluptatibus quaerat illum .</p>
+                <h3>Shivam Joshi</h3>
+                <!-- <p class="university">Jain University</p> -->
+            </div>
+            <div class="testimonial">
+                <img src="user-image.png" alt="Muskan">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, nobis nisi, pariatur quis quos voluptatibus quaerat illum </p>
+                <h3>Raj Joshi</h3>
+                <!-- <p class="university">Symbiosis Skills And Professional University</p> -->
+            </div>
+            <div class="testimonial">
+                <img src="user-image.png" alt="Ajay Kannan">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, nobis nisi, pariatur quis quos voluptatibus quaerat illum </p>
+                <h3>Ajay Kannan</h3>
+                <!-- <p class="university">SIES Graduate School Of Technology</p> -->
+            </div>
+        </div>
+        </section>
+
+
+
+    <!-- testimonial-section ends here--
+     -->
+
+
+<!-- home deliverysection ends here  -->
+    <!-- footer starts form here -->
+    <footer class="footer777">
+        <div class="container777">
+            <div class="row777">
+                <div class="footer-col777">
+                    <h4>Company</h4>
+                    <ul class="ul" >
+                        <li><a href="about-us.html">About us</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col777">
+                    <h4>Get Help</h4>
+                    <ul  class="ul"              >
+                        <li><a href="#"></a></li>
+                        <li><a href="#">Shopping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Payment Options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col777">
+                    <h4>Online Shop</h4>
+                    <ul     class="ul"           >
+                        <li><a href="#">Watch</a></li>
+                        <li><a href="#">Bag</a></li>
+                        <li><a href="#">Book</a></li>
+                        <li><a href="#">Novels</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col777">
+                    <h4>Follow Us</h4>
+                    <div class="social-link">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/levaze_digital?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+   
+    <!-- footer ends here -->
+
+
+
+
+
+
+
+<script>
+	document.querySelector(".navmenu").addEventListener("click", function(){
+    document.querySelector(".menubarlistt").classList.toggle("menubartoggle");
+});
+</script>
+</body>
+</html>

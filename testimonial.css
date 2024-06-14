@@ -1,0 +1,52 @@
+
+.testimonial-section {
+    font-family: Arial, sans-serif;
+    background-color: rgb(252, 247, 240);;                
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    max-height: 30vh;
+    margin-bottom: auto;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.testimonials {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 290px;
+    text-align: center;
+}
+
+.testimonial img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.testimonial h3 {
+    margin: 10px 0 5px;
+}
+
+.testimonial p {
+    margin: 5px 0;
+}
+
+.testimonial .university {
+    color: #6a1b9a;
+    font-style: italic;
+}

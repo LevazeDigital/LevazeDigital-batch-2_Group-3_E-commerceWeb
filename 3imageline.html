@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Slider Product</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    /* General styles */
+
+.container333 {
+
+    
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  max-width: 1500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Slider styles */
+.slider333 {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.slide333 {
+  flex: 0 0 auto;
+  width: 250px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.slide333:hover {
+  transform: translateY(-5px);
+}
+
+.slide333 img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px 10px 0 0;
+  border-bottom: 1px solid #000000; 
+}
+
+.slide-content333 {
+  padding: 10px;
+}
+
+.slide-content333 h2 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.slide-content333 p {
+  margin: 0 0 15px;
+  font-size: 14px;
+  color: #666;
+}
+
+.buy-btn333 {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buy-btn333:hover {
+  background-color: #45a049;
+}
+
+/* Button styles */
+.prev-btn333,
+.next-btn333 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  color: #333;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev-btn333 {
+  left: 30px;
+}
+
+.next-btn333 {
+  right: 30px;
+}
+</style>
+<body>
+
+<div class="container333">
+    <h1>Featured Products</h1>
+    <div class="slider333">
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 1">
+            <div class="slide-content333">
+                <h2>God of ruin</h2>
+                <p>Rina kent</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>Shadow of the wind</h2>
+                <p>Carlos Ruiz Zafón</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>Black knight</h2>
+                <p>Rina kent</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>The silent patient</h2>
+                <p>Alex Michaelides
+                </p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>A song of ice and fire</h2>
+                <p>George R.R. Martin</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>The last house on needless streets</h2>
+                <p>Catriona Ward</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>Psycho</h2>
+                <p> Robert Bloch</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>A dance with dragon</h2>
+                <p>George R.R. Martin</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>The dare</h2>
+                <p>Elle Kennedy </p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>A game of throne</h2>
+                <p>George R.R. Martin</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>A night of scream</h2>
+                <p>Richard Z. Santos
+                </p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>Tempted by deception</h2>
+                <p>Rina kent</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>Litany</h2>
+                <p>Gene Wolfe</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>Night of terror</h2>
+                <p>Andrew Lane</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>The eye of the world</h2>
+                <p> Robert Jordan</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>All the truths</h2>
+                <p>Rina kent</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>The maid</h2>
+                <p> Nita Prose</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>Midnight thrillers</h2>
+                <p> VIKRAM KHAITAN</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>A clash of king</h2>
+                <p>George R.R. Martin</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+
+
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>Ruthless empire</h2>
+                <p>Rina kent</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+        <!-- Add more slides as needed -->
+    </div>
+    <button class="prev-btn333">&lt;</button>
+    <button class="next-btn333">&gt;</button>
+</div>
+
+
+<!-- section section strts from here-- -->
+
+
+<div class="container333">
+    <h1>Featured Products</h1>
+    <div class="slider333">
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 1">
+            <div class="slide-content333">
+                <h2>God of ruin</h2>
+                <p>Rina kent</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>Shadow of the wind</h2>
+                <p>Carlos Ruiz Zafón</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>Black knight</h2>
+                <p>Rina kent</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>The silent patient</h2>
+                <p>Alex Michaelides
+                </p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>A song of ice and fire</h2>
+                <p>George R.R. Martin</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>The last house on needless streets</h2>
+                <p>Catriona Ward</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>Psycho</h2>
+                <p> Robert Bloch</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>A dance with dragon</h2>
+                <p>George R.R. Martin</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>The dare</h2>
+                <p>Elle Kennedy </p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>A game of throne</h2>
+                <p>George R.R. Martin</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>A night of scream</h2>
+                <p>Richard Z. Santos
+                </p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>Tempted by deception</h2>
+                <p>Rina kent</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>Litany</h2>
+                <p>Gene Wolfe</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>Night of terror</h2>
+                <p>Andrew Lane</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>The eye of the world</h2>
+                <p> Robert Jordan</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>All the truths</h2>
+                <p>Rina kent</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>The maid</h2>
+                <p> Nita Prose</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>Midnight thrillers</h2>
+                <p> VIKRAM KHAITAN</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>A clash of king</h2>
+                <p>George R.R. Martin</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+
+
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>Ruthless empire</h2>
+                <p>Rina kent</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+        <!-- Add more slides as needed -->
+    </div>
+    <button class="prev-btn333">&lt;</button>
+    <button class="next-btn333">&gt;</button>
+</div>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+  const slider = document.querySelector('.slider333');
+  const prevBtn = document.querySelector('.prev-btn333');
+  const nextBtn = document.querySelector('.next-btn333');
+
+  nextBtn.addEventListener('click', function() {
+      slider.scrollBy({
+          left: 350, // Adjust the scroll distance as needed
+          behavior: 'smooth'
+      });
+  });
+
+  prevBtn.addEventListener('click', function() {
+      slider.scrollBy({
+          left: -350, // Adjust the scroll distance as needed
+          behavior: 'smooth'
+      });
+  });
+});
+</script>
+</body>
+</html>

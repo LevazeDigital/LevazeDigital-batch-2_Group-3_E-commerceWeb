@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+
+    /* General styles */
+    
+      
+    .container333 {
+        
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        max-width: 1600px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+      }
+      
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+      }
+      
+      /* Slider styles */
+      .slider333 {
+        display: flex;
+        overflow-x: auto;
+        gap: 20px;
+        padding: 10px 0;
+        width: 100%;
+      }
+      
+      .slide333 {
+        flex: 0 0 auto;
+        width: 290px;
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+      
+      .slide333:hover {
+        transform: translateY(-5px);
+      }
+      
+      .slide333 img {
+        width: 100%;
+        height: 300px;
+        border-radius: 10px 10px 0 0;
+        border-bottom: 1px solid #000000; 
+      }
+      
+      .slide-content333 {
+        padding: 10px;
+      }
+      
+      .slide-content333 h2 {
+        margin: 0 0 10px;
+        font-size: 18px;
+        color: #333;
+      }
+      
+      .slide-content333 p {
+        margin: 0 0 15px;
+        font-size: 14px;
+        color: #666;
+      }
+      
+      .buy-btn333 {
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .buy-btn333:hover {
+        background-color: #45a049;
+      }
+      
+      /* Button styles */
+      .prev-btn333,
+      .next-btn333 {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: transparent;
+        border: none;
+        color: #24262b;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 1;
+      }
+      
+      .prev-btn333 {
+        left: 30px;
+      }
+      
+      .next-btn333 {
+        right: 30px;
+      }
+
+      .viewall-button333{
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 20px;
+        font-weight: bolder;
+        font-size: 20px;
+        margin-top: 30px;
+        margin-left: 800px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+      .viewall-button333:hover{
+        background-color:rgb(77, 76, 76);
+      }
+
+</style>
+<body>
+    
+<div class="container333">
+    <h1>Featured Products</h1>
+    <div class="slider333">
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 1">
+            <div class="slide-content333">
+                <h2>God of ruin</h2>
+                <p>Rina kent</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>Shadow of the wind</h2>
+                <p>Carlos Ruiz Zafón</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>Black knight</h2>
+                <p>Rina kent</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>The silent patient</h2>
+                <p>Alex Michaelides
+                </p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>A song of ice and fire</h2>
+                <p>George R.R. Martin</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+</div>
+
+<div>
+    <!-- <h1>Featured Products</h1> -->
+    <div class="slider333">
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 1">
+            <div class="slide-content333">
+                <h2>God of ruin</h2>
+                <p>Rina kent</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>Shadow of the wind</h2>
+                <p>Carlos Ruiz Zafón</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>Black knight</h2>
+                <p>Rina kent</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>The silent patient</h2>
+                <p>Alex Michaelides
+                </p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+        <div class="slide333">
+            <img src="buttonimage1.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>A song of ice and fire</h2>
+                <p>George R.R. Martin</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+    </div>
+        <a href="#"><button class="viewall-button333">view all..</button></a>
+       
+
+
+<!-- section section strts from here-- -->
+
+</script>
+</body>
+</html>

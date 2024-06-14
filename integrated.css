@@ -1,0 +1,57 @@
+.container444 {
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.picture-box444 {
+    position: relative;
+    flex: 1;
+    margin: 0 10px;
+    overflow: hidden;
+}
+
+.picture-box444 img {
+    width: 500px;
+	height: 500px;
+	padding-top: 130px;
+    display: block;
+    transition: transform 0.3s ease;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.overlay444 {
+    position: absolute;
+    top: 130px;
+    left: 0;
+    width: 500px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.picture-box444:hover .overlay444 {
+    opacity: 1;
+}
+
+.overlay444 h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+a {
+	text-decoration: none; /* Remove underline */
+	color: #ffffff; /* Change color to blue */
+}
+
+a:hover {
+	color: #0056b3; /* Darker blue on hover */
+}

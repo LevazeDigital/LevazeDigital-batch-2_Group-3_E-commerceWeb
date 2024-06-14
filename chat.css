@@ -1,0 +1,69 @@
+.features-container-main555{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    margin-top: 180px;
+    margin-bottom: 60px;
+    background-color:white;
+}
+
+.features-container555 {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.feature-item555 {
+    text-align: center;
+    max-width: 200px;
+    flex: 1; /* Flex property to make items flexible */
+    margin: 10px; /* Add margin for spacing */
+}
+
+.feature-item555 img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.feature-item555 h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.feature-item555 p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .features-container555 {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center items */
+    }
+
+    .feature-item555 {
+        max-width: 100%; /* Allow full width */
+        margin: 20px 0; /* Add vertical margin */
+    }
+}
+
+@media (max-width: 480px) {
+    .feature-item555 h3 {
+        font-size: 1em; /* Smaller font size on very small screens */
+    }
+
+    .feature-item555 p {
+        font-size: 0.8em; /* Smaller font size on very small screens */
+    }
+}

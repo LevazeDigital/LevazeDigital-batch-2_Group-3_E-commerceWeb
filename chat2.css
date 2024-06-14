@@ -1,0 +1,35 @@
+
+.banner-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .banner {
+    flex: 1;
+    min-width: 300px;
+    max-width: 33%;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  .banner img {
+    max-width: 100%;
+    height: auto;
+  }
+  .orange { background-color: orange; }
+  .yellow { background-color: yellow; }
+  .green { background-color: lightgreen; }
+  @media (max-width: 900px) {
+    .banner {
+      max-width: 50%;
+    }
+  }
+  @media (max-width: 600px) {
+    .banner {
+      max-width: 100%;
+    }
+  }
+
+  /* ends here and we are going to start from new section */
+  

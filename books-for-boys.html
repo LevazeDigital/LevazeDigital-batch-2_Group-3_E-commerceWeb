@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- <link rel="stylesheet" type="text/css" href="navbar.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- <link rel="stylesheet" href="navbar.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <title>Document</title>
+    <style>
+        
+    /* General styles */
+    
+      /* *{
+        background-color: #f4f4f4;
+
+      } */
+      @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+header{
+	margin: 0;
+	padding: 0;
+}
+/* /navbar 1 desktop view/ */
+header nav .navbar1{
+	display: flex;
+	justify-content: space-around;
+	line-height: 95px;
+	background-color:#006769;
+	margin-top: 30px;
+}
+header nav .navbar1 .logo1 a{
+	text-decoration: none;
+	color: #fcfafa;
+	font-weight: 600;
+	font-size: 24px;
+	letter-spacing: 0.5px;
+	font-family: Roboto;
+}
+header nav .navbar1 .searchbarr input{
+	height: 45px;
+	padding: 5px;
+	border: none;
+	border-radius: 15px;
+	width: 480px;
+	outline: none;
+}
+header nav .navbar1 .searchbarr i{
+	position: relative;
+	left: -30px;
+}
+header nav .navbar1 .iconss a{
+	text-decoration: none;
+	color: #f7f5f5;
+}
+header nav .navbar1 .iconss i{
+	font-size: 24px;
+	padding: 0 0px 0 5px;
+}
+header nav .navbar1 .navmenu{
+	cursor: pointer;
+}
+
+/* navbar2 mobile view*/
+header nav .mobileview{
+	background-color: #24262b;
+	text-align: center;
+	height: 45px;
+	width: 100%;
+	line-height: 45px;
+	margin-top: -1px;
+}
+header nav .mobileview input{
+	height: 33px;
+	padding: 5px;
+	border: none;
+	border-radius: 10px;
+	padding-left: 10px;
+	outline: none;
+	width: 80%;
+}
+header nav .mobileview i{
+	position: relative;
+	left: -30px;
+}
+
+/* /hide show content by clicking menubar/ */
+header nav .menubarlistt{
+	background-color: #24262b;
+	display: none;
+	margin-top: -1px;
+}
+header nav .menubarlistt ul li{
+	list-style: none;
+	padding-top: 10px;
+}
+header nav .menubarlistt ul{
+	padding-bottom: 20px;
+}
+header nav .menubarlistt ul a{
+	text-decoration: none;
+	color: #f8f7f7;
+	font-family: Roboto;
+	margin-top: 10px;
+}
+header nav .menubartoggle{
+	display: block;
+}
+
+/* mdeia screen for responsive*/
+
+@media screen and (max-width: 600px){
+	header nav .navbar1 .searchchmob{
+		display: none;
+	}
+}
+@media screen and (min-width: 600px){
+	header nav .mobileview{
+		display: none;
+	}
+}
+@media screen and (max-width: 300px){
+	header nav .navbar1 .logo1 a{
+	text-decoration: none;
+	color: #f7f3f3;
+	font-weight: 400;
+	font-size: 15px;
+	letter-spacing: 0.5px;
+	font-family: Roboto;
+}
+}
+@media screen and (max-width: 200px){
+	header nav .navbar1 .logo1{
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+      .container333 {
+        
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        max-width: 1600px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color:rgb(252, 247, 240);;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        flex-wrap: wrap;
+      }
+      
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+      }
+      
+      /* Slider styles */
+      .slider333 {
+        display: flex;
+        overflow-x: auto;
+        gap: 27px;
+        padding: 10px 0;
+        width: 100%;
+        
+      }
+      
+      .slide333 {
+        flex: 0 0 auto;
+        width: 280px;
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+      
+      .slide333:hover {
+        transform: translateY(-5px);
+      }
+      
+      .slide333 img {
+        width: 100%;
+        height: 300px;
+        border-radius: 10px 10px 0 0;
+        border-bottom: 1px solid #000000; 
+      }
+      
+      .slide-content333 {
+        padding: 10px;
+      }
+      
+      .slide-content333 h2 {
+        margin: 0 0 10px;
+        font-size: 18px;
+        color: #333;
+      }
+      
+      .slide-content333 p {
+        margin: 0 0 15px;
+        font-size: 14px;
+        color: #666;
+      }
+      
+      .buy-btn333 {
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .buy-btn333:hover {
+        background-color: #45a049;
+      }
+      
+      /* Button styles */
+      .prev-btn333,
+      .next-btn333 {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: transparent;
+        border: none;
+        color: #333;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 1;
+      }
+      
+      .prev-btn333 {
+        left: 30px;
+      }
+      
+      .next-btn333 {
+        right: 30px;
+      }
+
+      
+      .viewall-button333{
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 20px;
+        font-weight: bolder;
+        font-size: 20px;
+        margin-top: 50px;
+        margin-left: 670px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+      .viewall-button333:hover{
+        background-color:rgb(77, 76, 76);
+      }
+      .containers333{
+        margin-top: 80px;
+
+      }
+
+
+
+      /* section */
+
+
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container777{
+    max-width: 1170px;
+    margin:auto;
+}
+.row777{
+    display: flex;
+    flex-wrap: wrap;
+}
+.ul{
+    list-style: none;
+}
+.footer777{
+    background-color: #006769;
+    padding: 70px 0;
+    
+    line-height: 1.5;
+    font-family: 'poppins', sans-serif;
+
+    
+}
+.footer-col777{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col777 h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+ }
+                            /* line after the h4 tag starts here*/
+.footer-col777 h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63 ;
+    height :2px;
+    box-sizing: border-box;
+    width: 50px;
+} 
+.footer-col777 ul li:not(:last-child){
+    margin-bottom: 10px;
+
+}
+.footer-col777 ul li a{
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 400;
+    color: #fcfafa;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col777 ul li a:hover{
+    padding-left: 10px;
+    color:rgb(10, 0, 0);
+}
+.footer-col777 .social-link777 a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color:#ffffff;
+    transition: all 0.5s ease;
+}
+.footer-col777 .social-link777 a:hover{
+    color: #24252b;
+    background-color: #ffffff;
+}
+
+/* to make the footer responsive:- now we are adding media query to make the page responsive
+and work smoothly */
+@media(max-width:767px){
+    .footer-col777{
+        width:50%;
+        padding:0 15px;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width:574px){
+    .footer-col777{
+        width:100%;
+    }
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+ 
+
+
+  <header>
+    <nav>
+      <!--navbar1 desktop view-->
+      <div class="navbar1">
+        <div class="navitem">
+          <div class="logo1">
+            <a href="#" class="logo"><i class="fas fa-book"></i>bookly</a>
+          </div>
+        </div>
+        <div class="navitem">
+          <div class="searchbarr searchchmob">
+                      <form method="get">
+                          <input type="text" name="mainsearch" placeholder="search.." class="bi bi-search" />
+                          <span type="submit"><i class="bi bi-search"></i></span>
+                      </form>
+                  </div>
+        </div>
+        <div class="navitem">
+          <div class="iconss">
+                      <a href=""><i class="bi bi-person-fill"></i></a>
+                      <a href=""><i class="bi bi-cart-fill cart"></i></a>
+                      <i class="bi bi-list navmenu" style="color: white;"></i>
+                  </div>
+        </div>
+      </div>
+      <!--navbar2 mobile view-->
+      <div class="navbar2 mobileview">
+        <div class="searchchmob">
+              <form method="get">
+                  <input type="text" name="mainsearch" placeholder="search.." class="bi bi-search" />
+                  <span type="submit"><i class="bi bi-search"></i></span>
+              </form>
+             </div>
+      </div>
+      <!--menubar hide and show-->
+      <div class="menubarlistt">
+          <ul>
+              <li><a href=""><i class="bi bi-house-fill"></i> Home</a></li>
+              <li><a href=""><i class="bi bi-person-fill"></i> My Account</a></li>
+              <li><a href=""><i class="bi bi-cart-fill"></i> My Order</a></li>
+              <li><a href=""><i class="bi bi-telephone-fill"></i> Support</a></li>
+              <li><a href=""><i class="bi bi-currency-rupee"></i> Become Seller</a></li>
+          </ul>
+      </div>
+    </nav>
+  </header>
+  <!--start content here-->
+  <script>
+    document.querySelector(".navmenu").addEventListener("click", function(){
+      document.querySelector(".menubarlistt").classList.toggle("menubartoggle");
+  });
+  </script>
+
+
+
+<!-- 
+section -->
+
+
+
+
+<div class="container333">
+   
+    <div class="slider333">
+        <div class="slide333">
+            <img src="n2.jpeg" alt="Product 1">
+            <div class="slide-content333">
+                <h2>God of ruin</h2>
+                <p>Rina kent</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+        <div class="slide333">
+            <img src="n3.jpg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>Shadow of the wind</h2>
+                <p>Carlos Ruiz Zafón</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+        <div class="slide333">
+            <img src="n1.jpeg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>Black knight</h2>
+                <p>Rina kent</p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+        <div class="slide333">
+            <img src="n4.jpeg" alt="Product 2">
+            <div class="slide-content333">
+                <h2>The silent patient</h2>
+                <p>Alex Michaelides
+                </p>
+                <button class="buy-btn333">Add to cart</button>
+            </div>
+        </div>
+        
+</div>
+        <!-- <a href="#"><button class="viewall-button333">view all..</button></a>
+        -->
+
+
+        
+    <!-- footer starts form here -->
+    <footer class="footer777">
+      <div class="container777">
+          <div class="row777">
+              <div class="footer-col777">
+                  <h4>Company</h4>
+                  <ul class="ul" >
+                      <li><a href="#">About us</a></li>
+                      <li><a href="#">Our Services</a></li>
+                      <li><a href="#">Privacy Policy</a></li>
+                      <li><a href="#">Affiliate Program</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col777">
+                  <h4>Get Help</h4>
+                  <ul  class="ul"              >
+                      <li><a href="#">FAQ</a></li>
+                      <li><a href="#">Shopping</a></li>
+                      <li><a href="#">Returns</a></li>
+                      <li><a href="#">Order Status</a></li>
+                      <li><a href="#">Payment Options</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col777">
+                  <h4>Online Shop</h4>
+                  <ul     class="ul"           >
+                      <li><a href="#">Watch</a></li>
+                      <li><a href="#">Bag</a></li>
+                      <li><a href="#">Shoes</a></li>
+                      <li><a href="#">Dress</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col777">
+                  <h4>Follow Us</h4>
+                  <div class="social-link">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+ 
+  <!-- footer ends here -->
+
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+
+                /* Custom styles for the carousel */
+                .owl-carousel .item img {
+                    margin-top: 30px;
+                    width: 100%;
+                    height: 760px;
+                }
+        
+                /* Additional styles for responsiveness */
+                @media screen and (max-width: 768px) {
+                    .owl-carousel .item img {
+                        max-width: 100%;
+                    }
+                }
+        
